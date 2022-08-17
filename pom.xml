@@ -256,6 +256,11 @@
       <version>2.2</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>com.corgibytes</groupId>
+      <artifactId>dependency-history-maven</artifactId>
+      <version>2.0.0</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -416,7 +421,8 @@
 
         <plugins>
           <plugin>
-            <groupId>org.codehaus.mojo</groupId>
+            <!-- TODO: Switch the `groupId` back to `org.codehaus.mojo` after an official 1.4.2 version is released. -->
+            <groupId>com.corgibytes</groupId>
             <artifactId>mrm-maven-plugin</artifactId>
             <executions>
               <execution>
