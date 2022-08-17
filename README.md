@@ -1,10 +1,12 @@
 # MojoHaus Versions Maven Plugin
 
+> :warning: This repository is a fork of the Versions Maven Plugin that is maintained by [Corgibytes](https://corgibytes.com). It includes a [pull request](https://github.com/mojohaus/versions-maven-plugin/pull/636) that hasn't yet been merged into the upstream project. If that pull request gets merged, then this fork will likely be removed.
+
 This is the [versions-maven-plugin](http://www.mojohaus.org/versions-maven-plugin/).
  
-[![Apache License, Version 2.0, January 2004](https://img.shields.io/github/license/mojohaus/versions-maven-plugin.svg?label=License)](http://www.apache.org/licenses/)
-[![Maven Central](https://img.shields.io/maven-central/v/org.codehaus.mojo/versions-maven-plugin.svg?label=Maven%20Central)](https://search.maven.org/artifact/org.codehaus.mojo/versions-maven-plugin)
-[![Build Status](https://github.com/mojohaus/versions-maven-plugin/workflows/GitHub%20CI/badge.svg?branch=master)](https://github.com/mojohaus/versions-maven-plugin/actions/workflows/maven.yml?query=branch%3Amaster)
+[![Apache License, Version 2.0, January 2004](https://img.shields.io/github/license/corgibytes/versions-maven-plugin.svg?label=License)](http://www.apache.org/licenses/)
+[![Maven Central](https://img.shields.io/maven-central/v/com.corgibytes/versions-maven-plugin.svg?label=Maven%20Central)](https://search.maven.org/artifact/com.corgibytes/versions-maven-plugin)
+[![Build Status](https://github.com/corgibytes/versions-maven-plugin/workflows/GitHub%20CI/badge.svg?branch=master)](https://github.com/corgibytes/versions-maven-plugin/actions/workflows/maven.yml?query=branch%3Amaster)
 
 
 ## Contributing
