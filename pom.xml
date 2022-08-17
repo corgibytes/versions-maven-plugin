@@ -7,6 +7,7 @@
     <version>70</version>
   </parent>
 
+  <groupId>com.corgibytes</groupId>
   <artifactId>versions-maven-plugin</artifactId>
   <version>2.11.1-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
@@ -88,11 +89,22 @@
   </prerequisites>
 
   <scm>
-    <connection>scm:git:https://github.com/mojohaus/versions-maven-plugin.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/mojohaus/versions-maven-plugin.git</developerConnection>
-    <url>https://github.com/mojohaus/versions-maven-plugin/tree/master</url>
+    <connection>scm:git:https://github.com/corgibytes/versions-maven-plugin.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/corgibytes/versions-maven-plugin.git</developerConnection>
+    <url>https://github.com/corgibytes/versions-maven-plugin/tree/fork</url>
     <tag>HEAD</tag>
   </scm>
+
+  <distributionManagement>
+    <repository>
+      <id>ossrh-staging</id>
+      <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2</url>
+    </repository>
+    <snapshotRepository>
+      <id>ossrh-snapshots</id>
+      <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
 
   <properties>
     <mojo.java.target>1.8</mojo.java.target>
@@ -106,6 +118,22 @@
     <sitePluginVersion>3.7</sitePluginVersion>
     <project.build.outputTimestamp>2022-05-20T13:01:33Z</project.build.outputTimestamp>
   </properties>
+
+  <repositories>
+    <repository>
+      <id>ossrh-snapshots</id>
+      <layout>default</layout>
+      <name>ossrh-snapshots</name>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <checksumPolicy>fail</checksumPolicy>
+        <enabled>true</enabled>
+      </snapshots>
+      <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
+    </repository>
+  </repositories>
 
   <dependencyManagement>
     <dependencies>
@@ -394,7 +422,7 @@
         </reportSets>
       </plugin>
       <plugin>
-        <groupId>org.codehaus.mojo</groupId>
+        <groupId>com.corgibytes</groupId>
         <artifactId>versions-maven-plugin</artifactId>
         <reportSets>
           <reportSet>
@@ -424,6 +452,7 @@
             <!-- TODO: Switch the `groupId` back to `org.codehaus.mojo` after an official 1.4.2 version is released. -->
             <groupId>com.corgibytes</groupId>
             <artifactId>mrm-maven-plugin</artifactId>
+            <version>1.4.2</version>
             <executions>
               <execution>
                 <goals>
